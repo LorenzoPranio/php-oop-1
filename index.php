@@ -16,9 +16,14 @@ class Movie{
 
     //Metodo per la descrizione del film
     public function getDescription(){
-        return " Title: " . $this->title . " Type of genre: " . $this->genre . " Year of release: " . $this->year;
+        return "<strong>Title: </strong>" . $this->title . " <hr> " . "<strong>Type of genre: </strong>" . $this->genre . " <hr> " . "<strong>Year of release: </strong>" . $this->year;
     }
 }
+
+//Oggetti Movie
+$Van_Helsing = new Movie ("Van Helsing", "Horror/Action", 2004);
+$Tarzan = new Movie ("Tarzan", "Avventura/Musical", 1999);
+$Guardiani_Della_Galassia = new Movie ("Guardiani della Galassia", "Azione/Sci-fi", 2014);
 
 ?>
 
