@@ -7,7 +7,7 @@ class Movie{
     public $year;
 
     //Costruttore
-    public function __construct($_title, $_genre, $_year)
+    public function __construct($_title, $_year, ...$_genre)
     {
         $this->title = $_title;
         $this->genre = $_genre;
@@ -16,14 +16,14 @@ class Movie{
 
     //Metodo per la descrizione del film
     public function getDescription(){
-        return "<strong>Title: </strong>" . $this->title . " <hr> " . "<strong>Type of genre: </strong>" . $this->genre . " <hr> " . "<strong>Year of release: </strong>" . $this->year . " <hr> ";
+        return "<strong>Title: </strong>" . $this->title . " <hr> " . "<strong>Type of genre: </strong>" . implode(", ", $this->genre) . " <hr> " . "<strong>Year of release: </strong>" . $this->year . " <hr> ";
     }
 }
 
 //Oggetti Movie
-$Van_Helsing = new Movie ("Van Helsing", "Horror/Action", 2004);
-$Tarzan = new Movie ("Tarzan", "Avventura/Musical", 1999);
-$Guardiani_Della_Galassia = new Movie ("Guardiani della Galassia", "Action/Sci-fi", 2014);
+$Van_Helsing = new Movie ("Van Helsing", 2004, "Horror", "Action");
+$Tarzan = new Movie ("Tarzan", 1999, "Adventure", "Musical");
+$Guardiani_Della_Galassia = new Movie ("Guardiani della Galassia", 2014, "Action", "Sci-fi");
 
 echo $Van_Helsing ->getDescription();
 echo $Tarzan ->getDescription();
