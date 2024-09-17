@@ -23,7 +23,7 @@ class Movie{
 //Oggetti Movie
 $Van_Helsing = new Movie ("Van Helsing", "Horror/Action", 2004);
 $Tarzan = new Movie ("Tarzan", "Avventura/Musical", 1999);
-$Guardiani_Della_Galassia = new Movie ("Guardiani della Galassia", "Azione/Sci-fi", 2014);
+$Guardiani_Della_Galassia = new Movie ("Guardiani della Galassia", "Action/Sci-fi", 2014);
 
 echo $Van_Helsing ->getDescription();
 echo $Tarzan ->getDescription();
