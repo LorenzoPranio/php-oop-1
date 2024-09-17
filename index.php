@@ -13,6 +13,11 @@ class Movie{
         $this->genre = $_genre;
         $this->year = $_year;
     }
+
+    //Metodo per la descrizione del film
+    public function getDescription(){
+        return " Title: " . $this->title . " Type of genre: " . $this->genre . " Year of release: " . $this->year;
+    }
 }
 
 ?>
