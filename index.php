@@ -1,5 +1,9 @@
 <?php
 
+class Movie{
+
+}
+
 ?>
 
 <!DOCTYPE html>
